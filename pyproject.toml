@@ -21,7 +21,7 @@ inference = [
 ]
 llm = ["openai>=1.0"]
 litellm = ["litellm>=1.80,<1.87"]
-tts = ["openai>=1.0", "scipy>=1.10"]
+tts = ["openai>=1.0", "scipy>=1.10", "httpx>=0.27"]
 omni = ["websockets>=12.0", "python-socks[asyncio]>=2.0"]
 voice_llm = ["websockets>=12.0", "python-socks[asyncio]>=2.0"]
 qwen = ["openai>=1.0", "websockets>=12.0", "python-socks[asyncio]>=2.0", "scipy>=1.10"]
@@ -76,7 +76,7 @@ live_act = [
     "einops",
     "safetensors",
 ]
-asr = ["openai-whisper>=20231117"]
+asr = ["openai-whisper>=20231117", "websockets>=12.0"]
 windows_tts = ["pyttsx3>=2.98; platform_system == 'Windows'"]
 dev = [
     "pytest>=7.0",

@@ -51,6 +51,19 @@ qwen:
 	}
 }
 
+
+func TestDisplayComponentNameCosyVoiceLocal(t *testing.T) {
+	if got := displayComponentName("cosyvoice_local"); got != "CosyVoice (local)" {
+		t.Fatalf("displayComponentName(cosyvoice_local) = %q, want CosyVoice (local)", got)
+	}
+}
+
+func TestDisplayComponentNameFunASR(t *testing.T) {
+	if got := displayComponentName("funasr"); got != "FunASR" {
+		t.Fatalf("displayComponentName(funasr) = %q, want FunASR", got)
+	}
+}
+
 func TestDisplayComponentNameAtlas(t *testing.T) {
 	if got := displayComponentName("atlas"); got != "Atlas Cloud" {
 		t.Fatalf("expected Atlas Cloud, got %q", got)
